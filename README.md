@@ -1,0 +1,3 @@
+# README
+
+2018 AI4ALL NLP Project
