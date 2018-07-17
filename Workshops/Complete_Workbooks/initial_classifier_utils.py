@@ -40,10 +40,6 @@ def compute_proportions(unrelated, discuss, agree, disagree):
         proportions_related.append(find_headline_in_article_proportion(this_example))
     return {"unrelated":np.mean(proportions_unrelated), "discuss":np.mean(proportions_discuss), "agree":np.mean(proportions_agree), "disagree":np.mean(proportions_disagree), "related":np.mean(proportions_related)}
 
-def make_prediction(example, proportions):
-    proportions_stances = list(proportions.keys())
-    proportion = find_headline_in_article_proportion(example)
-    predicted_stance = proportions_stances[np.argmin(np.abs(np.array(list(proportions.values())) - proportion))]
-    return predicted_stance
+
 
 
