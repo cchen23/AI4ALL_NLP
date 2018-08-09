@@ -3,11 +3,11 @@ from main import train_and_predict_3_steps
 import csv
 
 """ Set data paths """
-TRAIN_BODY_CSV = '../../fnc-1/data/train_bodies.csv'
-TRAIN_STANCE_CSV = '../../fnc-1/data/train_stances.csv'
+TRAIN_BODY_CSV = '../train_bodies.csv'
+TRAIN_STANCE_CSV = '../train_stances.csv'
 
-TEST_BODY_CSV = '../../fnc-1/data/test_bodies.csv'
-TEST_HEADLINE_CSV = '../../fnc-1/data/test_stances_unlabeled.csv'
+TEST_BODY_CSV = '../data/test_bodies.csv'
+TEST_HEADLINE_CSV = '../data/test_stances_unlabeled.csv'
 
 """ Load data """
 id2body, id2body_sentences = load_body(TRAIN_BODY_CSV)

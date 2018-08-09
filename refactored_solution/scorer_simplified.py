@@ -87,7 +87,6 @@ def load_dataset(filename):
         reader = csv.DictReader(fh)
         if reader.fieldnames != FIELDNAMES:
             error = 'ERROR: Incorrect headers in: {}'.format(filename)
-            raise FNCException(error)
         else:
             data = list(reader)
     return data
